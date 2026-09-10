@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    
+    --green: #a5b498;
+    --dark: #222222;
+    --text: #666;
+    --light: #f7f7f7;
+    --white: #fff;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(fonts/inter\ \(1\)/.ttf);
+}
+
+@font-face {
+    font-family: "Amiri";
+    src: url(fonts/Amiri/Amiri-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(fonts/poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/roboto/Roboto-Regular.ttf);
+}
+
+body{
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.66;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.container{
+    max-width: 1890px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+h1{
+    font-family: "Amiri";
+    font-size: 68px;
+    color: #111;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 1.1;
+}
+
+h3{
+    font-family: "Poppins";
+    font-size: 16px;
+    word-spacing: 5px;
+}
+
+.small-title {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--green);
+}
+
+.title-line {
+    color: var(--green);
+    font-size: 12px;
+    margin: 12px 0 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 15px 30px;
+
+    background: var(--green);
+    color: #222;
+
+    border-radius: 30px;
+    font-family: "Poppins";
+
+    font-size: 18px;
+    letter-spacing: 2px;
+
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #899d7d;
+    color: #fff;
+}
+
+
+.top-bar {
+    height: 30px;
+    background: #111;
+    color: white;
+}
+
+.top-content {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-content p {
+    font-family: "Poppins";
+    font-size: 14px;
+}
+
+
+.header {
+    position: absolute;
+
+    top: 25px;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 10;
+
+    color: white;
+}
+
+.nav {
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+
+    font-size: 22px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.navbar a {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: var(--green);
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    font-size: 11px;
+}
+.nav-icons i{
+    width: 24px;
+    color: var(--white);
+}
+
+.nav-icons span {
+    font-size: 9px;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.hero {
+    min-height: 600px;
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.08),
+            rgba(0,0,0,.08)
+        ),
+        url("images/living\ room.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 50px;
+}
+
+.hero-content {
+    background: rgba(255,255,255,.97);
+
+    width: min(793px);
+
+    padding: 50px 40px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 40px rgba(0,0,0,.12);
+}
+
+.hero-content h1 {
+    font-family: "Amiri";
+    font-size: 68px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 12px;
+}
+
+.hero-content p {
+    font-family: "Poppins";
+    font-size: 16px;
+    line-height: 1.7;
+
+    max-width: 400px;
+    margin: 0 auto 25px;
+}
+
+.products{
+    width: 100%;
+    text-align: left;
+    margin-top: 100px;
+}
+
+.product-heading{
+    display: flex;
+}
+
+.head{
+    width: auto;
+}
+.head p{
+    font-family: "Poppins";
+    font-size: 16px;
+    color: var(--green);
+    
+}
+
+.head img{
+    max-width: 64px;
+    height: 20px;
+    margin-top: 16px;
+}
+
+.arrow{
+   display: flex;
+   font-size: 28px;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.arrow-gray{
+    color: var(--text);
+}
+.arrow-black{
+    margin-left: 16px;
+}
+
+
+.product-grid{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+}
+
+.product-image{
+    max-width: 347px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
